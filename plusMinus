@@ -1,0 +1,20 @@
+# Complete the plusMinus function below.
+def plusMinus(arr):
+    negSum=0
+    posSum=0
+    zeroSum=0
+    n=len(arr)
+    for i in range (n):
+        if arr[i]<0:
+            negSum+=1
+        elif arr[i]==0:
+            zeroSum+=1
+        else:
+            posSum+=1
+    # print format(len([x for x in lst if x > 0])/n, ".6f")
+    print ('{:6f}'.format(posSum/n))
+    print ('{:6f}'.format(negSum/n))
+    print ('{:6f}'.format(zeroSum/n))
+    #print (posSum/n, "%.6f")
+    #print (negSum/n, "%.6f")
+    #print (zeroSum/n, "%.6f")
